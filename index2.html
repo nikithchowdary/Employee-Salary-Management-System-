@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Salary Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Employee Salary Management System</h1>
+<p>Manage employee salary records</p>
+</header>
+
+<div class="container">
+
+<h2>Add Employee</h2>
+
+<input type="text" id="empId" placeholder="Employee ID">
+<input type="text" id="empName" placeholder="Employee Name">
+<input type="number" id="salary" placeholder="Basic Salary">
+<input type="number" id="bonus" placeholder="Bonus">
+<input type="number" id="deduction" placeholder="Deduction">
+
+<button onclick="addEmployee()">Add Employee</button>
+
+<h2>Search Employee</h2>
+
+<input type="text" id="searchId" placeholder="Enter Employee ID">
+<button onclick="searchEmployee()">Search</button>
+
+<h2>Employee Records</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Basic Salary</th>
+<th>Bonus</th>
+<th>Deduction</th>
+<th>Net Salary</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="employeeTable">
+
+</tbody>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
